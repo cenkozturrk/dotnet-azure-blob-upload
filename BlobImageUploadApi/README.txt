@@ -4,4 +4,4 @@
 
 
 #Architecture:
-Client → ASP.NET Core API → Azure Blob Storage
+Client - ASP.NET Core API - Azure Blob Storage
