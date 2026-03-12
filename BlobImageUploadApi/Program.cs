@@ -4,7 +4,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Swagger Conf
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// DI Conf
 builder.Services.AddScoped<BlobService>();
+builder.Services.AddSingleton(x =>
+    new QueueService(
+        builder.Configuration.GetConnectionString("QueueStorage"),
+        "jobs"
+    )
+);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
