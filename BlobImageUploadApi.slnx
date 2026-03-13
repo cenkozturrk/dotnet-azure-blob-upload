@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="BlobEventProcessor/BlobEventProcessor.csproj" Id="14f238a3-f09b-4b32-be3c-fbf14f1e0a49" />
   <Project Path="BlobImageUploadApi/BlobImageUploadApi.csproj" />
   <Project Path="QueueProcessorFunction/QueueProcessorFunction.csproj" Id="4f237c2b-adb7-4cfd-86fd-cf2a629c9175" />
 </Solution>
